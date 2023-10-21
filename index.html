@@ -5,113 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio: Viriya</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <style>
-        body {
-            margin: auto;
-            margin-top:12%;
-            margin-bottom: 5%;
-            background-image: url('blue.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-        }
-        fieldset {
-            border-color: black;
-            border-style: solid;
-            float: left;
-        }
-        #vya {
-            max-width: 30%;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
-            display:block;
-            border: 5px solid;
-            border-radius: 10px;
-            
-        }
-        h1,h3 {
-            text-align: center;
-        }
-        #container {
-            overflow-y: scroll;
-            height:450px;
-            background-color: rgba(255, 255, 255, 0.801);
-            border: 5px black solid;
-            padding:2%;
-            width:50%;
-            margin: 0 auto;
-            white-space: initial;
-            border-radius: 10px;
-        }
-        marquee {
-            font-size: 30px;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            background-color:rgba(25, 25, 112, 0.502);
-            color:white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <marquee>If you obey all the rules, you miss all the fun. — Katherine Hepburn</marquee>
     <div id="container">
-        <div title="Vya or GooGaaGee"><img src="IMG_4891.jpg" alt="My Profile" id="vya"></div></td>
-        <h1>Viriya Savoeun</h1>
-        <h3>Student ID: 2702345794 | Class: L1BC</h3>
-        <p>Hi! សួរស្ដី! I'm Viriya from Cambodia, specifically from Siem Reap province where Angkor Wat is located. I started primary school at the age of 5 for 6 years and went to a boarding secondary school for 7 years. I have two younger brothers, one is currently in high school and the other is in middle school. Blue Lock is my top most favorite manga right now and that is why I put it as this website's background (for fun). Nice to meet you!</p>
-        <fieldset>
-            <legend>My Gender</legend>
-            <table>
+        <div class="row">
+            <div class="col-1 col-s-1">
+                <div title="Vya or GooGaaGee"><img src="IMG_4891.jpg" alt="My Profile" id="vya"></div></td>
+                <br>
+                <fieldset>
+                    <legend>My Gender</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="radio" id="female" name="gender" value="Female" checked/>
+                                    <label for="female">Female</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="radio" id="male" name="gender" value="Male"/>
+                                    <label for="male">Male</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+            <div class="col-2 col-s-2">
+                <h1>Viriya Savoeun</h1>
+                <h3>Student ID: 2702345794 | Class: L1BC</h3>
+                <p>Hi! សួរស្ដី! I'm Viriya from Cambodia, specifically from Siem Reap province where Angkor Wat is located. I started primary school at the age of 5 for 6 years and went to a boarding secondary school for 7 years. I have two younger brothers, one is currently in high school and the other is in middle school. Blue Lock is my top most favorite manga right now and that is why I put it as this website's background (for fun). Nice to meet you!</p>
+            </div>
+        </div>
+        <br>
+        <div class="#">
+            <table style="margin-left: auto; margin-right: auto;">
                 <tr>
-                    <td>
-                        <div>
-                            <input type="radio" id="female" name="gender" value="Female" checked/>
-                            <label for="female">Female</label>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <input type="radio" id="male" name="gender" value="Male"/>
-                            <label for="male">Male</label>
-                        </div>
-                    </td>
+                    <td><a href="http://viriya.ligeracademyblog.org/">LLA Electronic Portfolio</a></td>
+                    <td>|</td>
+                    <td><a href="https://instagram.com/viriyasavoeun?utm_source=qr&igshid=OGIxMTE0OTdkZA=="><table><tr><td><img src="insta.webp" style="max-width: 20px; height: auto;"></td><td>Instagram Link</td></tr></table></a></td>
                 </tr>
             </table>
-        </fieldset><br><br><br>
-        <div>
-            <h4>Hobbies/Interest:</h4>
-            <ul>
-                <li>Reading Web Novels & Manga/Manhwa/Manhua</li>
-                <li>Learning New Languages</li>
-                <li>Experiencing New Things</li>
-            </ul>
         </div>
-        <fieldset>
-            <legend>Programming Skills</legend>
-            <div>
-                <input type="checkbox" id="python" name="skill" checked/>
-                <label for="python">Python</label>
-            </div>
-            <div>
-                <input type="checkbox" id="other" name="skill"/>
-                <label for="other">Other</label>
-            </div>
-        </fieldset><br><br><br><br>
-        <div>
-            <h4>Education</h4>
-            <ol>
-                <li>Secondary School: <a href="http://www.ligeracademy.org/">Liger Leadership Academy (LLA)</a></li>
-                <li>University: <a href="https://international.binus.ac.id/">Binus International</a></li>
-            </ol>
+        <br>
+        <div class="navbar">
+            <a class="active" href="#">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="education.html">Education & Skills</a>
         </div>
-        <table style="margin-left: auto; margin-right: auto;">
-            <tr>
-                <td><a href="http://viriya.ligeracademyblog.org/">LLA Electronic Portfolio</a></td>
-                <td>|</td>
-                <td><a href="https://instagram.com/viriyasavoeun?utm_source=qr&igshid=OGIxMTE0OTdkZA=="><table><tr><td><img src="insta.webp" style="max-width: 20px; height: auto;"></td><td>Instagram Link</td></tr></table></a></td>
-            </tr>
-        </table>
     <div>
 </body>
 </html>
